@@ -1,0 +1,134 @@
+/* Importing Google fonts */
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+/* Importing component files */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+
+/* General style rules for fonts and colors */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0;
+  color: #1f2933;
+}
+
+/* headings + links */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container component */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #1f2933;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+}
+
+.navbar-links a {
+  color: #4b5563;
+  font-size: 15px;
+}
+
+.navbar-links a:hover {
+  color: #2563eb;
+}
+
+/* Sections spacing */
+section {
+  padding: 40px 0;
+}
+
+/* Steps under "How it works" */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  gap: 20px;
+}
+
+.step {
+  flex: 1 1 250px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.step h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.step p {
+  font-size: 15px;
+  color: #4b5563;
+}
+
+/* Typeform wrapper */
+.typeform-embed {
+  margin-top: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.25);
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+.footer-content {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+}
