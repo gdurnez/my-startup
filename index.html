@@ -2,116 +2,197 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My Startup Landing</title>
+    <title>MyStartup · Smart city trips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Main CSS (imports components) -->
+    <!-- Main stylesheet (imports components) -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="navbar-brand">MyStartup</a>
-        <ul class="navbar-links">
-          <li><a href="#how-it-works">Product</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#typeform">Get access</a></li>
-        </ul>
-      </div>
-    </nav>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="top">
+      <div class="container navbar-content">
+        <a href="#top" class="navbar-brand">MyStartup</a>
 
-    <!-- BANNER / HERO -->
-    <div class="banner">
-      <div class="container">
-        <h1>Travel smarter with MyStartup</h1>
-        <h2>Your personal AI that builds the perfect city trip in minutes.</h2>
-        <a href="#typeform" class="btn-primary">Get early access</a>
+        <nav class="navbar-nav">
+          <ul class="navbar-links">
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#typeform" class="nav-cta">Get access</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- HOW IT WORKS SECTION -->
-    <section id="how-it-works">
+    <!-- ================= BANNER / HERO ================= -->
+    <section class="banner" id="hero">
+      <div class="container banner-content">
+        <div class="banner-text">
+          <p class="eyebrow">New • 2026</p>
+          <h1>Plan the perfect city trip in minutes.</h1>
+          <h2>MyStartup uses smart recommendations to design your next city break based on your budget, mood and time.</h2>
+
+          <div class="banner-actions">
+            <a href="#typeform" class="btn-primary">Request early access</a>
+            <a href="#how-it-works" class="btn-secondary">See how it works</a>
+          </div>
+
+          <p class="banner-meta">
+            No credit card required · Designed for busy students & young professionals
+          </p>
+        </div>
+
+        <aside class="banner-card">
+          <div class="banner-user">
+            <div class="avatar avatar-lg" style="background-image:url('images/avatar.png')"></div>
+            <div>
+              <h3>Marie, 21</h3>
+              <p>Student in Lille · 3 trips planned</p>
+            </div>
+          </div>
+          <ul class="banner-checklist">
+            <li>Weekend in Berlin under 250€</li>
+            <li>Hidden coffee spots added</li>
+            <li>Interactive map on your phone</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section id="how-it-works" class="section-light">
       <div class="container">
-        <h2>How it works</h2>
-        <p>
-          MyStartup analyses your preferences, budget and time to design the ideal city break.
-          From flights to coffee spots, everything is planned for you.
-        </p>
+        <header class="section-header">
+          <h2>How it works</h2>
+          <p>From idea to full itinerary in three simple steps.</p>
+        </header>
 
         <div class="steps">
-          <div class="step">
-            <div class="avatar" style="background-image:url('../images/avatar.png')"></div>
-            <h3>Tell us who you are</h3>
-            <p>Share your travel style, budget and favorite activities in a quick form.</p>
-          </div>
+          <article class="step">
+            <div class="avatar avatar-sm avatar-bordered"></div>
+            <h3>1. Share your travel vibe</h3>
+            <p>Tell us if you prefer museums, food, nightlife, or long walks in the city.</p>
+          </article>
 
-          <div class="step">
-            <div class="avatar avatar-bordered"></div>
-            <h3>We design your trip</h3>
-            <p>Our smart engine creates a customized itinerary in just a few minutes.</p>
-          </div>
+          <article class="step">
+            <div class="avatar avatar-sm avatar-square"></div>
+            <h3>2. We build your itinerary</h3>
+            <p>Our engine mixes local spots, transport and timing to design your perfect day.</p>
+          </article>
 
-          <div class="step">
-            <div class="avatar avatar-square"></div>
-            <h3>Enjoy the experience</h3>
-            <p>Receive an interactive map with all stops and practical information.</p>
-          </div>
+          <article class="step">
+            <div class="avatar avatar-sm avatar-ghost"></div>
+            <h3>3. Get your smart map</h3>
+            <p>Receive a ready‑to‑use map on your phone with all stops and tips.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- DESTINATIONS CARDS GRID -->
-    <section id="destinations">
+    <!-- ================= FEATURES ================= -->
+    <section id="features" class="section-dark">
       <div class="container">
-        <h2>Popular destinations</h2>
+        <header class="section-header">
+          <h2>Why travelers love MyStartup</h2>
+          <p>Everything you need for a smooth and exciting city break.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Smart recommendations</h3>
+            <p>We cross your preferences with real data to avoid tourist traps and find places you’ll actually enjoy.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Budget control</h3>
+            <p>Define how much you want to spend, we adapt the itinerary and highlight free activities.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Offline‑friendly</h3>
+            <p>Download your map before you leave so you can use it even with bad connection.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DESTINATIONS CARDS ================= -->
+    <section id="destinations" class="section-light">
+      <div class="container">
+        <header class="section-header">
+          <h2>Popular destinations</h2>
+          <p>Start with our curated city templates and customize them in one click.</p>
+        </header>
 
         <div class="cards">
-          <div class="card">
+          <article class="card">
             <img src="images/paris.jpg" alt="Paris">
-            <h3>Paris</h3>
-            <p>Cafés, museums and hidden streets for romantic city breaks.</p>
-          </div>
+            <div class="card-body">
+              <h3>Paris</h3>
+              <p>Sunset walks, local bakeries and museum shortcuts.</p>
+              <a href="#typeform" class="card-link">Plan my Paris trip →</a>
+            </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <img src="images/london.jpg" alt="London">
-            <h3>London</h3>
-            <p>Markets, gigs and cozy pubs for urban explorers.</p>
-          </div>
+            <div class="card-body">
+              <h3>London</h3>
+              <p>Markets, gigs and cozy pubs far from the crowds.</p>
+              <a href="#typeform" class="card-link">Plan my London trip →</a>
+            </div>
+          </article>
 
-          <div class="card">
+          <article class="card">
             <img src="images/berlin.jpg" alt="Berlin">
-            <h3>Berlin</h3>
-            <p>Art, nightlife and history with a creative twist.</p>
+            <div class="card-body">
+              <h3>Berlin</h3>
+              <p>Street art, clubs and unexpected green spots.</p>
+              <a href="#typeform" class="card-link">Plan my Berlin trip →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TYPEFORM / SIGNUP ================= -->
+    <section id="typeform" class="section-dark">
+      <div class="container">
+        <header class="section-header">
+          <h2>Get early access</h2>
+          <p>Answer a few questions and be among the first to try MyStartup.</p>
+        </header>
+
+        <div class="signup-layout">
+          <div class="signup-copy">
+            <ul class="signup-list">
+              <li>Private beta limited to 200 travelers</li>
+              <li>We send you 1–2 curated trips per month</li>
+              <li>You can stop at any time, no spam</li>
+            </ul>
+          </div>
+
+          <div class="typeform-embed">
+            <!-- Remplace l’URL par ton vrai Typeform -->
+            <iframe
+              src="https://form.typeform.com/to/yourTypeformID"
+              width="100%"
+              height="500"
+              frameborder="0"
+              allow="camera; microphone; autoplay; encrypted-media;"
+            ></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TYPEFORM SECTION -->
-    <section id="typeform">
-      <div class="container">
-        <h2>Get early access</h2>
-        <p>Answer a few questions and join our private beta.</p>
-
-        <!-- Remplace l'URL et ID par ton vrai Typeform -->
-        <div class="typeform-embed">
-          <iframe
-            src="https://form.typeform.com/to/yourTypeformID"
-            width="100%"
-            height="500"
-            frameborder="0"
-            allow="camera; microphone; autoplay; encrypted-media;"
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
       <div class="container footer-content">
-        <p>© 2026 MyStartup. Built while learning to code.</p>
+        <p>© 2026 MyStartup · Built while learning HTML & CSS.</p>
+        <a href="#top" class="footer-link">Back to top ↑</a>
       </div>
     </footer>
   </body>
