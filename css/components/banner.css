@@ -1,1 +1,79 @@
+.banner {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
+    url("../../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0 100px;
+}
+
+.banner-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.banner-text {
+  flex: 1 1 260px;
+}
+
+.banner-card {
+  flex: 1 1 220px;
+  background-color: rgba(15, 23, 42, 0.9);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #bfdbfe;
+  margin-bottom: 6px;
+}
+
+.banner-text h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner-text h2 {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.banner-actions {
+  margin-bottom: 10px;
+}
+
+.banner-meta {
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+.banner-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.banner-checklist {
+  list-style: none;
+  font-size: 14px;
+}
+
+.banner-checklist li + li {
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .banner-content {
+    flex-direction: column;
+  }
+}
 
