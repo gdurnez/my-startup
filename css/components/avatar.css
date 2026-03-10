@@ -1,1 +1,33 @@
+.avatar {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.avatar-sm {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.avatar-lg {
+  width: 70px;
+  height: 70px;
+}
+
+/* Variants */
+.avatar-bordered {
+  border: 3px solid #2563eb;
+  background-image: url("../../images/avatar.png");
+}
+
+.avatar-square {
+  border-radius: 12px;
+  background-image: url("../../images/avatar.png");
+}
+
+.avatar-ghost {
+  border: 2px dashed #9ca3af;
+  background-color: #f9fafb;
+}
 
